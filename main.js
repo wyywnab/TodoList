@@ -197,7 +197,7 @@ function refreshTodoList(keyword, tags){
         var itemInnerEleText = `
             <table style="width: 100%;">
                 <tr>
-                    <td style="width: 32px;">
+                    <td style="width: 28px;">
                         <input type="checkbox" data-item-id="${item["id"]}" onchange="onSwitchChecked(this)">
                     </td>
                     <td style="width: 1fr;">
