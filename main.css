@@ -1,0 +1,211 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    background: #ECEFF1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 80%;
+    margin: 0 auto;
+    
+    max-width: 1000px;
+    
+    /*background: blue;*/
+    
+}
+.container{
+    width: 90%;
+    min-width: 200px;
+    height: 100%;
+}
+.grid-container{
+    display: grid;
+    /*gap: 4px;*/
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.grid-container{
+    grid-template-columns: 1fr;
+}
+.grid-item{
+    /*background-color: red;*/
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (orientation: landscape) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container{
+        width: 80%;
+        min-width: 400px;
+        height: 80%;
+    }
+}
+
+.card{
+    margin: 0 auto;
+    margin: 20px;
+    background-color: #CFD8DC;
+    padding: 16px;
+    border-radius: 28px;
+    animation: shadowFadeOut 0.3s forwards;
+    line-height: 24px;
+}
+.card:hover{
+    /*box-shadow: 5px 5px 20px -8px #CFD8DC;*/
+    animation: shadowFadeIn 0.3s forwards;
+}
+@keyframes shadowFadeIn {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow: 5px 5px 20px -8px #CFD8DC;
+    }
+}
+
+@keyframes shadowFadeOut {
+    from {
+        box-shadow: 5px 5px 20px -8px #CFD8DC;
+    }
+    to {
+        box-shadow: none;
+    }
+}
+.card header{
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-left: 12px;
+}
+
+.input-text{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    height: 24px;
+    background-color: #ECEFF1;
+    outline: none;
+    padding: 4px 2px 4px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+.tag-list{
+    display: flex;
+    margin-top: 4px;
+}
+.tag-list div{
+    background-color: #ECEFF1;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 2px 8px 2px 8px;
+    height: min-content;
+    cursor: pointer;
+    user-select: none;
+    font-size: small;
+    
+}
+.tag-list a{
+    margin-top: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.tag-list a img{
+    margin-left: -2px;
+}
+
+.hint{
+    font-size: smaller;
+    font-weight: 500;
+    color: gray;
+    margin-left: 2px;
+}
+
+#text-description{
+    resize: none;
+    width: 100%;
+    height: 60px;
+    font-size: medium;
+}
+#add-button{
+    float: right;
+}
+button{
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+button:hover{
+    background-color: #eceff17a;
+}
+#submit{
+    width: 100%;
+    height: 32px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.todo-item{
+    background-color: #78909C;
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 4px;
+    color: #ECEFF1;
+    font-weight: 400;
+}
+.todo-item-description{
+    line-height: 32px;
+}
+.todo-item-tag{
+    color: #CFD8DC;
+    font-size: small;
+    line-height: 20px;
+}
+.todo-item-tag::before{
+    content: "Tag: ";
+}
+.todo-item-deadline{
+    color: #CFD8DC;
+    font-size: small;
+    line-height: 20px;
+}
+.todo-item-deadline::before{
+    content: "Deadline: ";
+}
+td {
+  vertical-align: top;
+}
+.todo-item-operations button{
+    width: 100%;
+}
+input[type="checkbox"]{
+    height: 100%;
+    transform: scale(1.2);
+    margin-top: 10px;
+}
+#cancel{
+    margin-left: 10px;
+    padding-bottom: 0;
+}
+#cancel img{
+    height: 16px;
+    margin: 0;
+}
+#removeAll{
+    float: right;
+    margin-top: -8px;
+}
+#deadline-datetime{
+    width: 100%;
+    background-color: #ECEFF1;
+    border: none;
+    outline: none;
+    padding: 4px 2px 4px 2px;
+}

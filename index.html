@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List for SAST</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="card main-list" id="cardList">
+                    <header>TODO List<button id="removeAll"><img src="icon/clear_all_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg"></button></header>
+                    <div id="list"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <header>Filter</header>
+                    <span class="hint">By Keyword</span><br />
+                    <input type="text" name="filter" id="text-filter" class="input-text">
+                    <span class="hint">By Tags</span><br />
+                    <div class="tag-list" id="tag-list-filter"></div>
+                </div>
+                <div class="card" id="editCard">
+                    <header><span>Add</span><button style="display: none;" id="cancel"><img src="icon/cancel_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg"></button></button></header>
+                    <span class="hint">Description</span><br />
+                    <textarea name="textarea" id="text-description" class="input-text"></textarea>
+                    <span class="hint">Tag</span><br />
+                    <div style="display: flex;">
+                        <input type="text" name="add_tag" id="add-tag" class="input-text">
+                        <button id="add-tag-button">
+                            <img src="icon/add_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                        </button>
+                    </div>
+                    
+                    <div class="tag-list" id="add-taglist"></div>
+                    <span class="hint">Deadline</span><br />
+                    <input type="datetime-local" id="deadline-datetime" name="datetime">
+                    <button id="submit" data-mode="add">
+                        <img src="icon/check_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
