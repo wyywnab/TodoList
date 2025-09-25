@@ -63,6 +63,7 @@ body{
     /*box-shadow: 5px 5px 20px -8px #CFD8DC;*/
     animation: shadowFadeIn 0.3s forwards;
 }
+
 @keyframes shadowFadeIn {
     from {
         box-shadow: none;
@@ -80,6 +81,7 @@ body{
         box-shadow: none;
     }
 }
+
 .card header{
     font-weight: 600;
     margin-bottom: 8px;
@@ -100,6 +102,9 @@ body{
 .tag-list{
     display: flex;
     margin-top: 4px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 }
 .tag-list div{
     background-color: #ECEFF1;
@@ -108,7 +113,6 @@ body{
     padding: 2px 8px 2px 8px;
     height: min-content;
     cursor: pointer;
-    user-select: none;
     font-size: small;
     
 }
@@ -142,9 +146,18 @@ button{
     border: none;
     border-radius: 4px;
     padding-top: 4px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 }
 button:hover{
-    background-color: #eceff17a;
+    background-color: #eceff1a4;
+}
+button:active{
+    background-color: #eceff166;
+}
+img{
+    pointer-events: none;
 }
 #submit{
     width: 100%;
