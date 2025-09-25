@@ -15,6 +15,7 @@ var keywordFiltered = "";
 
 function addTag(){
     var inputText = addTagInputEle.value;
+    inputText = inputText.replace(",","");
     if (inputText == "") return;
     var currentTagList = localStorage.getItem("tags");
     var list = [];
