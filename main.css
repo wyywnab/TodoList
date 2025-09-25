@@ -208,4 +208,5 @@ input[type="checkbox"]{
     border: none;
     outline: none;
     padding: 4px 2px 4px 2px;
+    border-radius: 8px;
 }
